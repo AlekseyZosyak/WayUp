@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+}
+body {
+    font-family: 'ubuntu', sans-serif;
+}
+
+h1, h2, h3 { 
+    font-family: 'ubuntu', sans-serif;
+    
+}
+
+p {
+   font-family: 'open sans', regular;
+   font-size: 15px;
+}
+li { 
+    list-style-type: none;
+}
+
+.body-container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+/* --- --- --- Header --- --- --- */
+
+.header {
+    background: rgb(77,189,254);
+    background: -moz-linear-gradient(left, rgb(77,189,254) 0%, rgb(55,144,217) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgb(77,189,254)), color-stop(100%, rgb(55,144,217)));
+    background: -webkit-linear-gradient(left, rgb(77,189,254) 0%, rgb(55,144,217) 100%);
+    background: -o-linear-gradient(left, rgb(77,189,254) 0%, rgb(55,144,217) 100%);
+    background: -ms-linear-gradient(left, rgb(77,189,254) 0%, rgb(55,144,217) 100%);
+    background: linear-gradient(to right, rgb(77,189,254) 0%, rgb(55,144,217) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4dbdfe', endColorstr='#3790d9', GradientType=1 );
+    padding-top: 60px;
+    padding-bottom: 150px;
+}
+.logo {
+    margin-bottom: 0;
+    margin-left: 0;
+}
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.title-content {
+    width: 590px;
+}
+
+.title {
+    color: white;
+    font-size: 37px;
+    margin-bottom: 40px;
+}
+.title span {
+    font-size: 59px;
+}
+.title-text {
+    color: white;
+    width: 400px;
+    margin-bottom: 40px;
+
+}
+
+.button { 
+    background-color: #ffd429;
+    width: 220px;
+    padding: 20px 0;
+    font-family: 'montserrat', sans-serif;
+    font-weight: 900;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    display: block;
+    transition: all 0.5s ease;
+    
+
+}
+.button:hover {
+    background-color: #e2bc24;
+  
+}
+.desk {
+    margin-left: -60px;
+    position: relative;
+    right: -60px;
+}
+
+/* --- --- --- expectations --- --- --- */
+
+.expectations {
+    padding-top: 90px;
+    padding-bottom: 120px;
+    text-align: center;
+}
+.title-expectations {
+    font-size: 30px;
+    margin-bottom: 60px;
+}
+.title-inside {
+    font-size: 19px;
+    margin-bottom: 10px;
+    padding-top: 170px;
+}
+.img-time {
+    background-image: url('../img/icon1.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.img-travel {
+    background-image: url('../img/icon2.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.img-values {
+    background-image: url('../img/icon3.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+/* --- --- --- Order form --- --- --- */
+
+.form {
+    background-color: #ecf3f8;
+    padding-top: 90px;
+    padding-bottom: 100px;
+}
+.form-title {
+    text-align: center;
+    margin-bottom: 60px;
+}
+.form-input {
+    width: 340px;
+    height: 45px;
+    display: block;
+    margin-bottom: 15px;
+    padding-left: 20px;
+    
+}
+.test {
+    
+}
+.box {
+    display: flex;
+    justify-content: center;
+}
+.dop {
+    width: 340px;
+}
+.bts {
+    border: 0;
+}
+
+/* --- --- --- Footer --- --- --- */
+
+.footer {
+    background-color: #164d7a;
+    padding: 60px 0;
+}
+.title-footer {
+    color: white;
+    font-size: 14px;
+    text-align: center;
+}
+
+@media screen and (max-width: 1200px) {
+    .body-container {
+        width: 960px;
+    }
+    .desk {
+        left: 0;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .body-container {
+        width: 720px;
+    }
+    .flex {
+        flex-direction: column;
+    }
+    .desk {
+        width: 650px;
+        left:  70px;
+    }
+    .logo {
+        margin-bottom: 100px;
+        margin-left: 40px;
+
+    }
+}
+    
+@media screen and (max-width: 768px) {
+    .body-container {
+        width: 560px;
+    }
+    .title-content {
+        width: 500px;
+        margin-left: 10px;
+    }
+    .desk {
+        width: 500px;
+        left:  70px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .desk {
+        left: 70px;
+    }
+    .button {
+        width: 90%;
+    }
+    .form-input {
+        width: 90%;
+    }
+    .desk {
+        max-width: 550px; 
+        width:100%;
+        left: 0%;
+    }
+    .title-content {
+        width: 350px;
+}
+    
